@@ -67,7 +67,7 @@ ul {
   color: #e5e7eb;
 }
 
-.sign-up-btn {
+.welcome-text .sign-up-btn {
   background-color: #3882f6;
   border: 0;
   color: #f9faf8;
@@ -141,4 +141,33 @@ ul {
   align-items: center;
   padding: 100px;
   width: 900px;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-container {
+  background-color: #3882f6;
+  color: #f9faf8;
+  margin: 80px;
+  padding: 50px 80px;
+  border-radius: 10px;
+  display: flex;
+  gap: 120px;
+}
+
+.blue-container .sign-up-btn {
+  background-color: #3882f6;
+  font-size: 15px;
+  border: 3px solid #f9faf8;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.blue-container a {
+  color: #f9faf8;
+  font-weight: 700;
 }
