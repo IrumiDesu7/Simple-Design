@@ -171,3 +171,15 @@ ul {
   color: #f9faf8;
   font-weight: 700;
 }
+
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #f9faf8;
+  padding: 40px;
+}
