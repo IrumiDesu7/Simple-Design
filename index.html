@@ -15,6 +15,11 @@
 			<div class="logo">
 				<p>Elo!</p>
 			</div>
+			<button class="hamburger" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 			<div class="links">
 				<ul>
 					<li>My Projects</li>
@@ -78,6 +83,23 @@
 	<div class="footer">
 		Copyright The Odin Project 2022
 	</div>
+
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const links = document.querySelector('.links');
+
+		hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('active');
+			links.classList.toggle('active');
+		});
+
+		document.querySelectorAll('.links ul li').forEach(link => {
+			link.addEventListener('click', () => {
+				hamburger.classList.remove('active');
+				links.classList.remove('active');
+			});
+		});
+	</script>
 </body>
 
 </html>
